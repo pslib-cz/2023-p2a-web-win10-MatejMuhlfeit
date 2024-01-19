@@ -1,48 +1,81 @@
 .start-panel {
+display: grid;
+grid-template-columns: 50px minmax(170px, auto) 1fr;
 
 }
 .start-panel__icons {
+display: grid;
+grid-template-rows: 1fr 50px 50px 50px 50px 50px;
+
 
 }
 .start-panel__grid {
-
+    display: grid;
+    gap: 50px;
+    grid-template-areas: "a a b b"
+                         "c c b b";
 }
 .apps--office {
-
+    display: grid;
+    grid-area: a;
+    grid-template-columns: repeat(6, 50px);
+    grid-auto-rows: 50px;
 }
 .apps--web {
-
+ display: grid;
+ grid-area: c;
+grid-template-columns: repeat(6, 50px);
+grid-auto-rows: 50px;
 }
 .apps--other {
-
+    display: grid;
+    grid-area: b;
+    grid-template-rows: 0.1fr 300px;
 }
 .apps__grid {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-auto-rows: 50px;
+    row-gap: 5px;
+    gap: 5px;
+    
+
 
 }
 .app--g2x2 {
-
+   grid-row-end: span 2;
+   grid-column-end: span 2;
 }
 .app--g2x1 {
-
+    grid-row-end: span 2;
 }
 .app--g1x2 {
-
+    grid-column-end: span 2;
 }
 .app--off-3 {
-
+    grid-row-start: 3;
+    grid-column-start: 3;
 }
 .app--off-4 {
-
+grid-row-start: 2;
+grid-column-start: 5;
 }
 .app--off-5 {
-
+grid-row-start: 1;
+grid-column-start: 5;
 }
 .app--in-3 {
-
+grid-row-start: 1;
+grid-column-start: 3;
 }
 .app--fun-2 {
+grid-row-start: 3;
+grid-column-start: 3;
 
 }
 .app--fun-3 {
-
+   grid-row-start: 5;
+   grid-column-start: 5;
+  
 }
